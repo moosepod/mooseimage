@@ -1,0 +1,20 @@
+yum install python-setuptools
+yum install python-setuptools-devel
+yum install gcc
+yum install git
+
+mkdir /usr/local/venvs
+cd /usr/local/venvs
+
+virtualenv mooseimage
+
+adduser mooseimage
+chown -R mooseimage mooseimage/
+
+cd mooseimage
+
+source bin/activate
+
+(add source)
+
+pip stable-req.txt
