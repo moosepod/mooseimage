@@ -2,6 +2,10 @@ yum install python-setuptools
 yum install python-setuptools-devel
 yum install gcc
 yum install git
+yum install Xvfb
+yum install glib
+yum install pygtk2
+yum install xwd
 
 mkdir /usr/local/venvs
 cd /usr/local/venvs
@@ -18,3 +22,6 @@ source bin/activate
 (add source)
 
 pip stable-req.txt
+
+--
+Xvfb :1 -screen 0 800x600x24&
