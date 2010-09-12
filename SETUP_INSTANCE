@@ -6,6 +6,22 @@ yum install Xvfb
 yum install glib
 yum install pygtk2
 yum install xwd
+yum install xauth
+yum install xorg-x11-fonts*
+
+yum install firefox
+yum install ImageMagick
+
+curl -O http://www.flexthinker.com/wp-content/uploads/2009/11/xvfb-run.sh.txt
+
+# To fetch (rough)
+`which Xvfb` :1 -screen 0 1024x768x24 -ac &
+firefox http://www.google.com/ &
+
+firefox -remote "openurl(http://www.mozilla.org)"
+DISPLAY=:1 import -window root googledotcom.png
+
+(will need to remove .mozilla each time for this to work)
 
 mkdir /usr/local/venvs
 cd /usr/local/venvs
