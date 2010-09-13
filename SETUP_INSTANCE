@@ -1,3 +1,5 @@
+(fedora micro 64bit minimal)
+
 yum install python-setuptools
 yum install python-setuptools-devel
 yum install gcc
