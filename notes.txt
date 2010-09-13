@@ -1,0 +1,27 @@
+General tasks:
+
+- How to format sqs messages
+   - Callback URL
+   - Image processing URL params
+   - (No need for api key)
+
+- How to run as daemon
+
+- Actual processing framework
+   - Takes image URL
+   - Takes command
+   - Takes parameters
+   - Returns either error (exception?) or path to processed file
+
+- How to fetch images
+
+- How to handle errors
+
+- How to handle callback (and format)
+   - How to handle failure of callback and retry
+   
+- Put images on S3?
+   
+Basic procedure:
+- Add to SQS
+- Get callback with processed url or error

@@ -11,7 +11,11 @@ yum install xorg-x11-fonts*
 
 yum install firefox
 yum install ImageMagick
+yum install java
 
+easy_install windmill
+
+curl -O http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip
 curl -O http://www.flexthinker.com/wp-content/uploads/2009/11/xvfb-run.sh.txt
 
 # To fetch (rough)
